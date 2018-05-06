@@ -16,7 +16,8 @@
 }
 
 .show {
-  display: block; /* hides from screen readers, and users */
+  /* hides from screen readers, and users */
+  display: block;
 }
 
 /*** EXERCISE ***/
