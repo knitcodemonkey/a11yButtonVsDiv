@@ -1,0 +1,30 @@
+* {
+  padding: 5px;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#clickableElements > * {
+  margin: 5px;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  font-size: 16px;
+  border: 1px solid grey;
+}
+
+.show {
+  display: block; /* hides from screen readers, and users */
+}
+
+/*** EXERCISE ***/
+
+/* Make btn look like a link */
+.btn {
+}
+
+/* make the div look like a link */
+.clickableDiv {
+}

@@ -1,0 +1,35 @@
+* {
+  padding: 5px;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#clickableElements > * {
+  margin: 5px;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  font-size: 16px;
+  border: 1px solid grey;
+}
+
+.show {
+  display: block; /* hides from screen readers, and users */
+}
+
+/*** EXERCISE ***/
+
+/* Make .btn look like a div */
+.btn {
+  border: none;
+  background: none;
+}
+
+/* make .clickableDiv look like a button */
+.clickableDiv {
+  border: 1px solid grey;
+  background: linear-gradient(lightgrey, white);
+  cursor: pointer;
+}
