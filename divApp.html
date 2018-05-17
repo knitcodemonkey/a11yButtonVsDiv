@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>A11y Button Vs Div</title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+<style type="text/css">
+    .button {
+        border: 1px solid grey;
+        background: linear-gradient(lightgrey, white);
+        cursor: pointer;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div id="clickableDiv" class="button" role="button" tabindex="0">Click This Div</div>
+
+    <div id="showme" class="content">
+        If you need a clickable element that doesn't leave the page, use a button.
+    </div>
+
+</body>
+
+<!-- the javascript to show and hide the showme div like a button -->
+<script type="text/javascript">
+    /* Toggle the showme div */
+    function toggleDiv() {
+        document.getElementById('showme').classList.toggle('show');
+    }
+
+    /* bind events to obtain event object */
+    ['click', 'keypress'].forEach(function (evt) {
+        document.getElementById('clickableDiv').addEventListener(evt, handleEvent);
+    });
+
+    /* detect click and keypress to trigger the toggleDiv method */
+    function handleEvent(event) {
+        if (event.type === "click"
+            || (event.type === "keypress" && ["Enter", " "].includes(event.key))) {
+            event.preventDefault();
+            toggleDiv();
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>A11y Button Vs Div</title>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+</head>
+<style type="text/css">
+    .notButton {
+        border: none;
+        background: none;
+        display: block;
+    }
+
+    .show {
+        /* hides from screen readers, and users */
+        display: block;
+    }
+</style>
+
+<body>
+    <button value="button" class="notButton" onclick="toggleDiv()">Click This Button</button>
+
+    <div id="showme" class="content">
+        If you need a clickable element that doesn't leave the page, use a button.
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    /* Toggle the showme div */
+    function toggleDiv() {
+        document.getElementById('showme').classList.toggle('show');
+    }
+</script>
+
+</html>
