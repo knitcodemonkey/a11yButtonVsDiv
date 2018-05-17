@@ -1,18 +1,20 @@
-* {
-  padding: 5px;
-  font-size: 18px;
-  font-family: Helvetica, Arial, sans-serif;
+html,
+body {
+  padding: 20px;
 }
 
-#clickableElements > * {
-  margin: 5px;
-  display: inline-block;
+* {
+  font-size: 32px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .content {
   display: none;
-  font-size: 16px;
+  background: grey;
   border: 1px solid grey;
+  margin: 10px 0;
+  padding: 5px;
+  color: white;
 }
 
 .show {
@@ -20,12 +22,22 @@
   display: block;
 }
 
-/*** EXERCISE ***/
-
-/* Make btn look like a link */
-.btn {
+.link {
+  color: blue;
+  text-decoration: underline;
 }
 
-/* make the div look like a link */
-.clickableDiv {
+.roundedCorners {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.vintage {
+  color: white;
+  background-color: crimson;
+  box-shadow: 4px 4px 8px grey;
+  border: 1px solid darkred;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 10px;
 }

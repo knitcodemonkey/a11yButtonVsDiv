@@ -6,9 +6,10 @@ dist
 .DS_Store
 .next
 .eslintcache
+.vscode
 storybook-static
 preact
-
+*.mov
 cypress/videos
 cypress/screenshots
 
